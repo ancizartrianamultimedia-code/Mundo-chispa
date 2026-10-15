@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto | Mundo Chispa</title>
+<meta name="description" content="Mundo Chispa: juguetería con juguetes seguros, educativos y divertidos para todas las edades. Envíos a todo el país.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="index.html"><span class="blocks" aria-hidden="true"><i></i><i></i><i></i></span>Mundo Chispa</a>
+  <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false">Menú</button>
+  <nav id="nav"><a href="index.html">Inicio</a><a href="nosotros.html">Quiénes somos</a><a href="productos.html">Productos</a><a href="servicios.html">Servicios</a><a href="contacto.html" class=on aria-current=page>Contacto</a></nav>
+  <button class="cart" id="cart" aria-label="Abrir carrito">Carrito <b id="cartN">0</b></button>
+  <button class="theme" id="theme" aria-label="Cambiar a modo oscuro">Modo oscuro</button>
+</header>
+<main>
+<section class="wrap split">
+  <div>
+    <h1>Hablemos de juegos</h1>
+    <p class="lead">Pregunta por un juguete, reserva una fiesta o cotiza para tu colegio. Respondemos en menos de 2 horas.</p>
+    <p><b>Dirección:</b> Avenida 19 #104-30, Bogotá<br><b>Horario:</b> Lunes a domingo, 10 a. m. a 8 p. m.<br><b>WhatsApp:</b> 300 456 7890</p>
+  </div>
+  <form id="form" class="form" novalidate>
+    <label>Nombre<input name="nombre" type="text" autocomplete="name"><small></small></label>
+    <label>Correo<input name="correo" type="email" autocomplete="email"><small></small></label>
+    <label>Tema<select name="tema"><option value="">Elige uno</option><option>Ayuda para elegir un regalo</option><option>Reservar una fiesta</option><option>Compra para mi colegio</option><option>Cambio o reclamo</option><option>Otro</option></select><small></small></label>
+    <label>Mensaje<textarea name="mensaje" rows="4"></textarea><small></small></label>
+    <button class="btn" type="submit">Enviar mensaje</button>
+    <p id="ok" role="status"></p>
+  </form>
+</section>
+<section class="wrap">
+  <h2>Nuestras tiendas</h2>
+  <div class="grid3">
+    <div class="card"><h3>Avenida 19</h3><p>Avenida 19 #104-30. Tienda principal con sala de fiestas y talleres.</p></div>
+    <div class="card"><h3>Chapinero</h3><p>Carrera 13 #60-25. Juguetes educativos y de arte.</p></div>
+    <div class="card"><h3>Cedritos</h3><p>Calle 140 #11-40. Tienda express con envoltura de regalo.</p></div>
+  </div>
+</section>
+</main>
+<footer class="foot"><div class="wrap fgrid"><div><strong class="flogo">Mundo Chispa</strong><p>Avenida 19 #104-30, Bogotá<br>Lunes a domingo, 10 a. m. a 8 p. m.<br>hola@mundochispa.co</p></div><div class="flinks"><a href="index.html">Inicio</a><a href="nosotros.html">Quiénes somos</a><a href="productos.html">Productos</a><a href="servicios.html">Servicios</a><a href="contacto.html">Contacto</a></div><div><strong>Compra segura</strong><p>Juguetes con norma NTC 4002.<br>Cambios hasta 30 días.<br>Pago contra entrega.</p></div></div><p class="copy">© 2026 Mundo Chispa. Precios y datos de ejemplo para este proyecto.</p></footer>
+<div class="toast" id="toast" role="status"></div>
+<script src="./js/main.js"></script>
+</body>
+</html>

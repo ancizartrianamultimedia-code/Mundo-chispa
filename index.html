@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inicio | Mundo Chispa</title>
+<meta name="description" content="Mundo Chispa: juguetería con juguetes seguros, educativos y divertidos para todas las edades. Envíos a todo el país.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="index.html"><span class="blocks" aria-hidden="true"><i></i><i></i><i></i></span>Mundo Chispa</a>
+  <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false">Menú</button>
+  <nav id="nav"><a href="index.html" class=on aria-current=page>Inicio</a><a href="nosotros.html">Quiénes somos</a><a href="productos.html">Productos</a><a href="servicios.html">Servicios</a><a href="contacto.html">Contacto</a></nav>
+  <button class="cart" id="cart" aria-label="Abrir carrito">Carrito <b id="cartN">0</b></button>
+  <button class="theme" id="theme" aria-label="Cambiar a modo oscuro">Modo oscuro</button>
+</header>
+<main>
+<section class="hero" id="hero">
+  <span class="fx f1" data-speed="0.3" aria-hidden="true">🧸</span><span class="fx f2" data-speed="-0.25" aria-hidden="true">🚂</span><span class="fx f3" data-speed="0.45" aria-hidden="true">🎨</span><span class="fx f4" data-speed="-0.35" aria-hidden="true">🪁</span><span class="fx f5" data-speed="0.2" aria-hidden="true">🧩</span><span class="fx f6" data-speed="-0.18" aria-hidden="true">🚀</span>
+  <span class="shape s-c" data-speed="0.5" aria-hidden="true"></span><span class="shape s-q" data-speed="-0.4" aria-hidden="true"></span><span class="shape s-t" data-speed="0.3" aria-hidden="true"></span>
+  <h1 data-speed="0.1">Aquí juega<br>la imaginación.</h1>
+  <p data-speed="0.05">Juguetes seguros, educativos y muy divertidos para cada edad. Escoge, regala y recíbelo en casa.</p>
+  <div class="row"><a class="btn" href="productos.html">Ver juguetes</a><a class="btn alt" href="servicios.html">Fiestas y talleres</a></div>
+  <div class="sticker" data-speed="-0.15">Envío gratis desde $150.000</div>
+</section>
+<section class="wrap">
+  <h2>Compra por edad</h2>
+  <div class="grid4 ages">
+    <a class="age-card a1" href="productos.html"><b>0-2</b><span>Primeros juegos</span></a>
+    <a class="age-card a2" href="productos.html"><b>3-5</b><span>Descubrir y crear</span></a>
+    <a class="age-card a3" href="productos.html"><b>6-8</b><span>Construir y retar</span></a>
+    <a class="age-card a4" href="productos.html"><b>9+</b><span>Ciencia y estrategia</span></a>
+  </div>
+</section>
+<section class="wrap">
+  <h2>Ofertas de la semana</h2>
+  <div class="carousel" id="carousel" aria-roledescription="carrusel">
+    <article class="slide on s1"><h3>Semana de los bloques</h3><p>20 % menos en toda la línea de construcción.</p></article>
+    <article class="slide s2"><h3>Lleva 2 peluches, paga 1,5</h3><p>El segundo peluche sale con 50 % de descuento.</p></article>
+    <article class="slide s3"><h3>Arte para todos</h3><p>Pinturas, crayones y plastilina desde $24.900.</p></article>
+    <div class="ctrl"><button id="prev" aria-label="Anterior">Anterior</button><span id="count">1 de 3</span><button id="next" aria-label="Siguiente">Siguiente</button></div>
+  </div>
+</section>
+<section class="wrap quiz-wrap">
+  <h2>¿Qué le regalo?</h2>
+  <form class="form quiz" id="quiz">
+    <label>Edad<select id="qEdad"><option value="0-2">0 a 2 años</option><option value="3-5" selected>3 a 5 años</option><option value="6-8">6 a 8 años</option><option value="9+">9 años o más</option></select></label>
+    <label>Le encanta<select id="qGusto"><option value="Peluches">Abrazar</option><option value="Construcción">Construir</option><option value="Educativos">Aprender</option><option value="Vehículos">Mover y correr</option><option value="Arte">Crear y pintar</option></select></label>
+    <button class="btn" type="submit">Mostrar regalo</button>
+    <div class="result" id="qOut" role="status">Elige la edad y lo que más le gusta, y te sugerimos un juguete.</div>
+  </form>
+</section>
+<section class="band"><div class="wrap"><ul class="stats big"><li><b data-count="25000">0</b> niños felices</li><li><b data-count="800">0</b> juguetes en catálogo</li><li><b data-count="120">0</b> fiestas celebradas</li><li><b data-count="9">0</b> años jugando</li></ul></div></section>
+<section class="wrap">
+  <h2>Los más pedidos</h2>
+  <div class="grid3"><article class="toy"><div class="pic k0"><span aria-hidden="true">🧸</span><em class="age">0-2 años</em><button class="fav" aria-pressed="false" aria-label="Guardar Oso Abrazo en favoritos" data-name="Oso Abrazo">♡</button></div><h3>Oso Abrazo</h3><p>Peluches</p><div class="buy"><strong>$49.900</strong><button class="btn add" data-name="Oso Abrazo" data-price="49900">Añadir</button></div></article><article class="toy"><div class="pic k1"><span aria-hidden="true">🚀</span><em class="age">6-8 años</em><button class="fav" aria-pressed="false" aria-label="Guardar Cohete Armable en favoritos" data-name="Cohete Armable">♡</button></div><h3>Cohete Armable</h3><p>Construcción</p><div class="buy"><strong>$119.900</strong><button class="btn add" data-name="Cohete Armable" data-price="119900">Añadir</button></div></article><article class="toy"><div class="pic k2"><span aria-hidden="true">🎨</span><em class="age">3-5 años</em><button class="fav" aria-pressed="false" aria-label="Guardar Set de Pinturas en favoritos" data-name="Set de Pinturas">♡</button></div><h3>Set de Pinturas</h3><p>Arte</p><div class="buy"><strong>$34.900</strong><button class="btn add" data-name="Set de Pinturas" data-price="34900">Añadir</button></div></article></div>
+</section>
+<section class="wrap">
+  <h2>Por qué comprar con nosotros</h2>
+  <div class="grid4">
+    <div class="card"><h3>Juguetes seguros</h3><p>Materiales no tóxicos y norma NTC 4002.</p></div>
+    <div class="card"><h3>Envío rápido</h3><p>En 24 a 72 horas a todo el país.</p></div>
+    <div class="card"><h3>Cambios fáciles</h3><p>30 días para cambiar sin preguntas.</p></div>
+    <div class="card"><h3>Regalo listo</h3><p>Lo envolvemos y le ponemos tarjeta.</p></div>
+  </div>
+</section>
+<section class="wrap">
+  <h2>Lo que cuentan las familias</h2>
+  <div class="grid3">
+    <blockquote class="card quote">Mi hija armó el cohete sola en una tarde y ahora quiere ser astronauta.<footer>Natalia P., mamá de Sofía (7)</footer></blockquote>
+    <blockquote class="card quote">Me ayudaron a elegir el regalo de mi sobrino en cinco minutos. Llegó envuelto y a tiempo.<footer>Julián A., tío</footer></blockquote>
+    <blockquote class="card quote">Celebramos el cumpleaños aquí y los niños no querían irse.<footer>Carolina M., mamá de Tomás (5)</footer></blockquote>
+  </div>
+</section>
+<section class="wrap"><form class="form news" id="news" novalidate>
+  <h2>Recibe ideas de regalo y descuentos</h2>
+  <p>Un correo al mes, sin spam: lanzamientos, ofertas y fechas de talleres.</p>
+  <div class="row"><input name="email" type="email" placeholder="tucorreo@ejemplo.com" aria-label="Correo electrónico"><button class="btn" type="submit">Suscribirme</button></div>
+  <small id="newsMsg" role="status"></small>
+</form></section>
+</main>
+<footer class="foot"><div class="wrap fgrid"><div><strong class="flogo">Mundo Chispa</strong><p>Avenida 19 #104-30, Bogotá<br>Lunes a domingo, 10 a. m. a 8 p. m.<br>hola@mundochispa.co</p></div><div class="flinks"><a href="index.html">Inicio</a><a href="nosotros.html">Quiénes somos</a><a href="productos.html">Productos</a><a href="servicios.html">Servicios</a><a href="contacto.html">Contacto</a></div><div><strong>Compra segura</strong><p>Juguetes con norma NTC 4002.<br>Cambios hasta 30 días.<br>Pago contra entrega.</p></div></div><p class="copy">© 2026 Mundo Chispa. Precios y datos de ejemplo para este proyecto.</p></footer>
+<div class="toast" id="toast" role="status"></div>
+<script src="./js/main.js"></script>
+</body>
+</html>

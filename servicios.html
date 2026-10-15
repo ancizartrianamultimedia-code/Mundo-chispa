@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Servicios | Mundo Chispa</title>
+<meta name="description" content="Mundo Chispa: juguetería con juguetes seguros, educativos y divertidos para todas las edades. Envíos a todo el país.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="index.html"><span class="blocks" aria-hidden="true"><i></i><i></i><i></i></span>Mundo Chispa</a>
+  <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false">Menú</button>
+  <nav id="nav"><a href="index.html">Inicio</a><a href="nosotros.html">Quiénes somos</a><a href="productos.html">Productos</a><a href="servicios.html" class=on aria-current=page>Servicios</a><a href="contacto.html">Contacto</a></nav>
+  <button class="cart" id="cart" aria-label="Abrir carrito">Carrito <b id="cartN">0</b></button>
+  <button class="theme" id="theme" aria-label="Cambiar a modo oscuro">Modo oscuro</button>
+</header>
+<main>
+<section class="wrap">
+  <h1>Servicios</h1>
+  <p class="lead">Más que una tienda: celebramos cumpleaños, enseñamos y dejamos el regalo listo.</p>
+  <div class="grid2">
+    <div class="card"><h3>Cumpleaños en la tienda</h3><p>Sala de fiestas con animador, torta y juegos para grupos de 8 a 20 niños.</p></div>
+    <div class="card"><h3>Talleres de los sábados</h3><p>Arte, ciencia y construcción para niños de 4 a 12 años. Cupos limitados.</p></div>
+    <div class="card"><h3>Regalos listos</h3><p>Envoltura, tarjeta escrita a mano y entrega sorpresa el día del cumpleaños.</p></div>
+    <div class="card"><h3>Compras para colegios</h3><p>Material didáctico y juguetes por volumen, con factura electrónica.</p></div>
+  </div>
+</section>
+<section class="wrap">
+  <h2>Talleres de este mes</h2>
+  <div class="table-wrap"><table class="tbl"><thead><tr><th>Taller</th><th>Edad</th><th>Día y hora</th><th>Precio</th><th></th></tr></thead><tbody>
+    <tr><td>Pintura con los dedos</td><td>4 a 6</td><td>Sábado, 10 a. m.</td><td>$25.000</td><td><button class="btn alt res" data-n="Pintura con los dedos">Reservar</button></td></tr>
+    <tr><td>Mini científicos</td><td>7 a 10</td><td>Sábado, 2 p. m.</td><td>$35.000</td><td><button class="btn alt res" data-n="Mini científicos">Reservar</button></td></tr>
+    <tr><td>Ingenieros de bloques</td><td>6 a 9</td><td>Domingo, 11 a. m.</td><td>$30.000</td><td><button class="btn alt res" data-n="Ingenieros de bloques">Reservar</button></td></tr>
+    <tr><td>Cuentos y títeres</td><td>3 a 5</td><td>Domingo, 3 p. m.</td><td>$20.000</td><td><button class="btn alt res" data-n="Cuentos y títeres">Reservar</button></td></tr>
+  </tbody></table></div>
+</section>
+<section class="wrap">
+  <h2>Arma tu pedido de regalo</h2>
+  <form class="form calc" id="calc">
+    <label>Valor de los juguetes (en pesos)<input id="cValor" type="number" min="0" step="1000" value="90000"></label>
+    <label class="check"><input id="cWrap" type="checkbox"> Envoltura de regalo (+ $6.000)</label>
+    <label class="check"><input id="cCard" type="checkbox"> Tarjeta escrita a mano (+ $4.000)</label>
+    <label>Entrega<select id="cShip"><option value="9000">Bogotá (+ $9.000)</option><option value="15000">Otra ciudad (+ $15.000)</option><option value="0">Recoger en tienda (gratis)</option></select></label>
+    <button class="btn" type="submit">Calcular total</button>
+    <p id="cOut" role="status">Elige las opciones para ver el total de tu regalo.</p>
+  </form>
+</section>
+<section class="wrap">
+  <h2>Club Chispa</h2>
+  <div class="grid3">
+    <div class="card plan"><h3>Explorador</h3><p class="pr">Gratis</p><ul><li>Puntos por cada compra</li><li>Aviso de lanzamientos</li></ul></div>
+    <div class="card plan hot"><h3>Aventurero</h3><p class="pr">$12.900 al mes</p><ul><li>10 % menos en juguetes</li><li>Envío gratis sin mínimo</li><li>Un taller gratis al mes</li></ul></div>
+    <div class="card plan"><h3>Campeón</h3><p class="pr">$22.900 al mes</p><ul><li>15 % menos en juguetes</li><li>Envoltura de regalo gratis</li><li>Fiesta con 20 % de descuento</li></ul></div>
+  </div>
+</section>
+<section class="wrap narrow">
+  <h2>Preguntas frecuentes</h2>
+  <details><summary>¿Cómo sé si un juguete es adecuado para la edad?</summary><p>Cada juguete muestra su edad recomendada. Si dudas, escríbenos y te ayudamos a elegir.</p></details>
+  <details><summary>¿Puedo cambiar un regalo?</summary><p>Sí, hasta 30 días después con el empaque original. Incluimos una tarjeta de cambio sin precio.</p></details>
+  <details><summary>¿Cuánto demora el envío?</summary><p>Entre 24 y 72 horas en las principales ciudades.</p></details>
+  <details><summary>¿Cómo reservo una fiesta?</summary><p>Escríbenos con la fecha, la cantidad de niños y la edad. Te respondemos con una propuesta el mismo día.</p></details>
+</section>
+</main>
+<footer class="foot"><div class="wrap fgrid"><div><strong class="flogo">Mundo Chispa</strong><p>Avenida 19 #104-30, Bogotá<br>Lunes a domingo, 10 a. m. a 8 p. m.<br>hola@mundochispa.co</p></div><div class="flinks"><a href="index.html">Inicio</a><a href="nosotros.html">Quiénes somos</a><a href="productos.html">Productos</a><a href="servicios.html">Servicios</a><a href="contacto.html">Contacto</a></div><div><strong>Compra segura</strong><p>Juguetes con norma NTC 4002.<br>Cambios hasta 30 días.<br>Pago contra entrega.</p></div></div><p class="copy">© 2026 Mundo Chispa. Precios y datos de ejemplo para este proyecto.</p></footer>
+<div class="toast" id="toast" role="status"></div>
+<script src="./js/main.js"></script>
+</body>
+</html>
